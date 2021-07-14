@@ -18,7 +18,7 @@
             <p class="lead">Ini adalah website  Hospital Information System</p>
             <hr class="my-4">
             <p>Silahkan Memulai Pengalaman Anda.</p>
-            <a class="btn btn-primary btn-lg" href="konsumen_beli.php" role="button">Mulai</a>
+            <a class="btn btn-primary btn-lg" href="login.php" role="button">Mulai</a>
         </div>
 
         <div class="row">
@@ -40,17 +40,6 @@
                         <h6 class="card-subtitle mb-2 text-muted">Daftar Akun Anda Disini</h6>
                         <p class="card-text">Daftarkan Akun Anda Dan Rasakan Sensasinya</p>
                         <a href="register.php" class="card-link">Klik Disini Untuk Register</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Jadwal</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Lihat Jadwal Terlebih Dahulu Sebelum Memesan</h6>
-                        <p class="card-text">Lihat Jadwal Penerbangan</p>
-                        <a href="jadwal.php" class="card-link">Klik Disini Untuk Lihat Jadwal</a>
                     </div>
                 </div>
             </div>
