@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Index Konsumen</title>
+    <title>Halaman Pasien</title>
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/desain.css" rel="stylesheet">
@@ -21,11 +21,11 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="index.php">Home </a>
-                    <a class="nav-item nav-link active" href="konsumen_beli.php">Index Konsumen <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="indexpasien.php">Index Pasien <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="daftar_dokter.php">Daftar Dokter</a>
                     <a class="nav-item nav-link" href="jadwal.php">Atur Jadwal</a>
-                    <a class="nav-item nav-link" href="jadwal_kamu.php">Atur Jadwal</a>
-                    <a class="nav-item nav-link" href="logout.php">Logout</a>
+                    <a class="nav-item nav-link" href="jadwal_kamu.php">jadwalmu</a>
+                    <a class="nav-item nav-link" href="index.php">Logout</a>
                 </div>
             </div>
         </nav>

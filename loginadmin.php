@@ -17,7 +17,7 @@
     ?>
     <h2>Halaman Login Admin</h2>
 
-    <form method="POST" action="ceklogin.php">
+    <form method="POST" action="indexadmin.php">
         <div class="form-group ">
             <label for="exampleInputText1">Username</label>
             <input type="text" name="username" class="form-control" placeholder="Enter Username">

@@ -23,14 +23,6 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-
-    // cek apakah yang mengakses halaman ini sudah login
-    if ($_SESSION['level'] == "") {
-        header("location:loginadmin.php?pesan=gagal");
-    }
-    ?>
 
     <div class="d-flex" id="wrapper">
 
@@ -41,7 +33,7 @@
                 <a href="indexadmin.php" class="list-group-item list-group-item-action bg-light">Home</a>
                 <a href="datadoctor.php" class="list-group-item list-group-item-action bg-light">Doctor</a>
                 <a href="perjanjiandoctor.php" class="list-group-item list-group-item-action bg-light">Perjanjian Doctor</a>
-                <a href="logoutadmin.php" class="list-group-item list-group-item-action bg-light">Logout</a>
+                <a href="loginadmin.php" class="list-group-item list-group-item-action bg-light">Logout</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->

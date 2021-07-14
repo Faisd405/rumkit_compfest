@@ -23,6 +23,7 @@
                     <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="#">Login</a>
                     <a class="nav-item nav-link" href="register.php">Register</a>
+                    <a class="nav-item nav-link" href="loginadmin.php">Login Admin</a>
                 </div>
             </div>
         </nav>
@@ -35,7 +36,7 @@
                 <p class="lead">Ini adalah website Hospital Information System</p>
             </div>
 
-            <form method="post" action="ceklogin_konsumen.php">
+            <form method="post" action="indexpasien.php">
                 <?php
                 if (isset($_GET['pesan'])) {
                     if ($_GET['pesan'] == "gagal") {

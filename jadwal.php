@@ -2,47 +2,43 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Data Perjanjian</title>
-
+    <title>Index Pasien</title>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/desain.css" rel="stylesheet">
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="dist/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dist/css/simple-sidebar.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
-    <div class="d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">Menu Navigasi </div>
-            <div class="list-group list-group-flush">
-                <a href="indexadmin.php" class="list-group-item list-group-item-action bg-light">Home</a>
-                <a href="datadoctor.php" class="list-group-item list-group-item-action bg-light">Doctor</a>
-                <a href="perjanjiandoctor.php" class="list-group-item list-group-item-action bg-light">Perjanjian Doctor</a>
-                <a href="loginadmin.php" class="list-group-item list-group-item-action bg-light">Logout</a>
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.php">Home </a>
+                    <a class="nav-item nav-link" href="indexpasien.php">Index Pasien <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="daftar_dokter.php">Daftar Dokter</a>
+                    <a class="nav-item nav-link" href="jadwal.php">Atur Jadwal</a>
+                    <a class="nav-item nav-link" href="jadwal_kamu.php">jadwalmu</a>
+                    <a class="nav-item nav-link" href="index.php">Logout</a>
+                </div>
             </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div class="container-fluid">
-            <h4>ENTRY Doctor</h4>
+        </nav>
+    </div>
+    <div class="container-fluid">
+            <h4>ENTRY perjanjian</h4>
 
             <!-- Form Daftar/Nambah Data Perjanjian -->
             <form id="add-perjanjian-form" action="#">
-                <h4>Tambah Perjanjian Data Form</h4>
+                <h4>Nambah perjanjian Data Form</h4>
                 <div class="form-group col-md-6">
                     <label for="inputUsername4">Nama Doctor</label>
                     <input type="text" class="form-control" id="inputUsername4" name="nama_doctor">
@@ -62,35 +58,6 @@
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <br>
-            <!-- Form Edit Data Perjanjian -->
-            <form id="Edit-perjanjian-form" action="#">
-                <h4>edit Perjanjian Data Form</h4>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername4">ID Perjanjian</label>
-                    <input type="text" class="form-control" id="inputIDe4" name="id_perjanjian">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername4">Nama Doctor</label>
-                    <input type="text" class="form-control" id="inputUsername4" name="nama_doctor">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername4">Nama Pasien</label>
-                    <input type="text" class="form-control" id="inputUsername4" name="nama_pasien">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername4">Deskripsi</label>
-                    <input type="text" class="form-control" id="inputUsername4" name="deskripsi">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputUsername4">Jadwal</label>
-                    <input type="date" class="form-control" id="inputDate4" name="jadwal">
-                </div>
-
-                <button type="submit" class="btn btn-primary">EDIT</button>
-            </form>
-            <br>
-
             <!-- Table Data Doctor -->
             <table class="table">
                 <thead class="thead-dark">
@@ -100,18 +67,9 @@
                         <th scope="col">Nama Pasien</th>
                         <th scope="col">Deskripsi</th>
                         <th scope="col">Jadwal</th>
-                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody id="perjanjian-list">
-
-                </tbody>
-            </table>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -136,7 +94,7 @@
         });
     </script>
 
-    <script src="app_perjanjian.js"></script>
+    <script src="app_perjanjian_pasien.js"></script>
 </body>
 
 </html>
